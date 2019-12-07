@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bouncing-loader</title>
+  <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
+  <style>
+    .box {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dot {
+      width: 30px;
+      height: 30px;
+      background-color: #C3C5D7;
+      border-radius: 50%;
+      animation-name: magicShow;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .dot:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    .second {
+      animation-delay: 200ms;
+    }
+
+    .third {
+      animation-delay: 400ms;
+    }
+
+    @keyframes magicShow {
+      50% {
+        opacity: 1;
+        transform: translateY(30px)
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="dot first"></div>
+    <div class="dot second"></div>
+    <div class="dot third"></div>
+  </div>
+</body>
+
+</html>
