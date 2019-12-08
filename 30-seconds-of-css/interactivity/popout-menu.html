@@ -17,7 +17,8 @@
 
     .popout-menu {
       position: absolute;
-      display: none;
+      visibility: hidden;
+      display: flex;
       align-items: center;
       padding-left: 20px;
       left: 100%;
@@ -27,8 +28,10 @@
       background-color: #333;
     }
 
-    .reference:hover .popout-menu{
-      display: flex;
+    .reference:hover .popout-menu,
+    .reference:focus .popout-menu,
+    .reference:focus-within .popout-menu {
+      visibility: visible;
     }
   </style>
 </head>
