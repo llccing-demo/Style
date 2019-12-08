@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hover-shadow-box-animation</title>
+  <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F5F6FA;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 20px;
+      height: 100vh;
+    }
+
+    .shadow-box {
+      display: inline-block;
+      box-shadow: 0 0 1px transparent;
+      margin: 10px;
+      transition-property: transform, box-shadow;
+      transition-duration: 300ms;
+      line-height: 1.5;
+    }
+
+    .shadow-box:hover,
+    .shadow-box:focus,
+    .shadow-box:active {
+      transform: scale(1.2);
+      box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
+    }
+    
+    .has-perspective{
+      /* 从样式效果上看，并没有看出什么区别…… */
+      transform: perspective(1px) translateZ(0);
+    }
+  </style>
+</head>
+
+<body>
+  <h3>一、有tansform: perspective translateZ 设置 </h3>
+  <p class="shadow-box has-perspective">Box it!</p>
+  <hr>
+  <h3>二、没有tansform: perspective translateZ 设置 </h3>
+  <p class="shadow-box">Box it!</p>
+</body>
+
+</html>
