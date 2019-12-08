@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>汉堡按钮-因为能够压缩么……</title>
+  <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      width: 80px;
+    }
+
+    .bar {
+      height: 10px;
+      background-color: #000;
+      border-radius: 2px;
+      transition: all .5s;
+      transform-origin: left center;
+    }
+
+    .bar:not(:last-child) {
+      margin-bottom: 18px;
+    }
+
+    .hamburger-menu:hover .top {
+      transform: rotateZ(45deg);
+    }
+    .hamburger-menu:hover .bottom {
+      transform: rotateZ(-45deg);
+    }
+    .hamburger-menu:hover .middle{
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hamburger-menu">
+    <div class="bar top"></div>
+    <div class="bar middle"></div>
+    <div class="bar bottom"></div>
+  </div>
+</body>
+
+</html>
