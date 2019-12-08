@@ -8,32 +8,39 @@
   <title>高度渐变</title>
   <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
   <style>
-    body{
+    body {
       display: flex;
-      height: 100vh;
       justify-content: center;
-      align-items: center;
     }
 
-    .trigger{
+    .trigger {
+      margin-top: 40vh;
       line-height: 1.2;
     }
-    .el{
-      height: 0;
+
+    .el {
+      max-height: 0;
       overflow: hidden;
-      transition: all 1s linear;
+      transition: max-height 1s;
     }
-    .trigger:hover .el{
-      height: auto;
+
+    .trigger:hover > .el {
+      max-height: var(--max-height);
     }
   </style>
 </head>
 
 <body>
-<div class="trigger">
-  hover me to see a height transition.
-  <div class="el">content</div>
-</div>
+  <div class="trigger">
+    hover me to see a height transition.
+    <div class="el">content</div>
+  </div>
+
+  <script>
+    const el = document.querySelector('.el')
+    const height = el.scrollHeight;
+    el.style.setProperty('--max-height', `${height}px`)
+  </script>
 </body>
 
 </html>
