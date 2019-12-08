@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>同级淡入</title>
+  <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .sibling-fade {
+      display: flex;
+      transition: color 500ms;
+    }
+
+    .sibling-fade:hover {
+      color: #ccc;
+    }
+
+    .sibling-fade span {
+      padding: 8px 16px;
+      transition: color 500ms;
+    }
+
+    .sibling-fade span:not(:last-child) {
+      margin-right: 20px;
+      padding: 8px 16px
+    }
+
+    .sibling-fade span:hover {
+      color: #333
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sibling-fade">
+    <span>Item 1</span>
+    <span>Item 2</span>
+    <span>Item 3</span>
+    <span>Item 4</span>
+    <span>Item 5</span>
+    <span>Item 6</span>
+  </div>
+</body>
+
+</html>
