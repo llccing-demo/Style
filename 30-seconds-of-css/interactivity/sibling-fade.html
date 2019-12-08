@@ -10,29 +10,16 @@
   <style>
     body {
       text-align: center;
-    }
-
-    .sibling-fade {
-      display: flex;
-      transition: color 500ms;
-    }
-
-    .sibling-fade:hover {
-      color: #ccc;
+      margin-top: 200px;
     }
 
     .sibling-fade span {
-      padding: 8px 16px;
-      transition: color 500ms;
+      padding: 0 1rem;
+      transition: opacity .2s;
     }
 
-    .sibling-fade span:not(:last-child) {
-      margin-right: 20px;
-      padding: 8px 16px
-    }
-
-    .sibling-fade span:hover {
-      color: #333
+    .sibling-fade:hover span:not(:hover) {
+      opacity: 0.5;
     }
   </style>
 </head>
