@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>落地猫头鹰选择器</title>
+  <!-- <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet"> -->
+  <style>
+    /* div + p 表示 选择div元素之后紧跟的每个p元素，
+      星号表示所有元素，所以 * + *，表示所有元素都增加了line-height
+     */
+    * + * {
+      line-height: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div>Parent 01</div>
+    <div>Parent 02
+      <div>Child 01</div>
+      <div>Child 02</div>
+      <p>I have not line-height!</p>
+    </div>
+    <div>Parent 03</div>
+  </div>
+
+  <span>13123123</span>
+</body>
+
+</html>

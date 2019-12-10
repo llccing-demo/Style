@@ -24,3 +24,13 @@
 
 display: table的元素需要调整高度
 display:table-cell的元素，能够使用 vertical-align: middle 属性
+
+### lobotomized-owl-selector 落地猫头鹰选择器
+
+```css
+/* 给所有元素增加line-height */
+* + * {
+  line-height: 1.5;
+}
+```
+
