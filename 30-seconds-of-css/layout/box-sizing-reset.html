@@ -8,12 +8,21 @@
   <title>了解box-sizing属性</title>
   <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
   <style>
+    html{
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after{
+      box-sizing: inherit;
+    }
+
     .box{
       border: 10px solid #FF0200;
       height: 100px;
       width: 100px;
       display: inline-block;
-      box-sizing: border-box;
       background-color: #FF6347;
     }
 
