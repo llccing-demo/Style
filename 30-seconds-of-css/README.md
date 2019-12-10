@@ -45,3 +45,5 @@ display:table-cell的元素，能够使用 vertical-align: middle 属性
 
 该属性决定了width的作用区域，box-sizing: border-box时，width=contentWidth+padding+border; box-sizing: content-box时，width=contentWidth;
 
+### clearfix 清除浮动
+
