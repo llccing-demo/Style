@@ -19,3 +19,8 @@
 ### 3-tile-layout 平铺3个元素
 
 这里需要注意的是，不可以用flex、grid布局，只能用display: inline-block; 来做，所以会有间隔，通过标签间没有空余距离来做
+
+### display-table-centering table布局居中一个元素
+
+display: table的元素需要调整高度
+display:table-cell的元素，能够使用 vertical-align: middle 属性
