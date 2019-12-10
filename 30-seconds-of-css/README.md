@@ -15,3 +15,7 @@
 - [http://www.alloyteam.com/2012/10/how-to-develop-accessible-web-site-application/](http://www.alloyteam.com/2012/10/how-to-develop-accessible-web-site-application/) 如何开发无障碍的 web 网页
 
 ### last-item-with-remaining-available-height 最后一个元素占满剩下的高度
+
+### 3-tile-layout 平铺3个元素
+
+这里需要注意的是，不可以用flex、grid布局，只能用display: inline-block; 来做，所以会有间隔，通过标签间没有空余距离来做
