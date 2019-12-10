@@ -34,3 +34,9 @@ display:table-cell的元素，能够使用 vertical-align: middle 属性
 }
 ```
 
+### transform-centering 利用transform和定位实现垂直水平居中
+```css
+.child{
+  transform: translate(-50%, -50%);
+}
+```
