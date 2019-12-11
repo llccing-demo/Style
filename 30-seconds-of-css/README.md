@@ -47,3 +47,5 @@ display:table-cell的元素，能够使用 vertical-align: middle 属性
 
 ### clearfix 清除浮动
 
+### fix-image-in-container 缩小图片，同时保证图片原有比例
+
