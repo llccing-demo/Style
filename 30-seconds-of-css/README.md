@@ -54,3 +54,5 @@ object-fix属性，指定可替换元素的内容应该如何适应到其使用�
 ### flexbox-centering 使用弹性盒模型居中内容
 
 ### grid-centering 使用栅格布局居中内容
+
+### truncate-text-multiline 文字截断效果
