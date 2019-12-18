@@ -66,3 +66,5 @@ justify-content: space-around;
 /* 两侧不靠边，所有元素距离都相等 */
 justify-content: space-evenly;
 ```
+
+### constant-width-to-height-ratio 固定宽高比
