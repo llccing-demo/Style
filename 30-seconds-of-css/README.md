@@ -1,4 +1,4 @@
-# 30-seconds-of-css
+# [30-seconds-of-css](https://github.com/30-seconds/30-seconds-of-css)
 
 ## animation
 
@@ -50,3 +50,5 @@ display:table-cell的元素，能够使用 vertical-align: middle 属性
 ### fix-image-in-container 缩小图片，同时保证图片原有比例
 
 object-fix属性，指定可替换元素的内容应该如何适应到其使用的高度和宽度确定的框
+
+### flexbox-centering 使用弹性盒模型居中内容
