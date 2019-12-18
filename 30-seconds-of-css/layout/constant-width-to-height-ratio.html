@@ -8,18 +8,26 @@
   <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
   <style>
     .constant-width-to-height-ratio {
-      width: 100px;
       background-color: burlywood;
+      width: 300px
     }
+
+    .constant-width-to-height-ratio::before {
+      content: '';
+      padding-bottom: 90%;
+      float: left;
+    }
+
     .constant-width-to-height-ratio::after{
       content: '';
       display: block;
-      padding-bottom: 100%;
+      clear: both;
     }
   </style>
 </head>
 <body>
   <div class="constant-width-to-height-ratio">
+    <p>123123123</p>
   </div>
 </body>
 </html>
