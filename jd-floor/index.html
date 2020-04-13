@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+  <title>ScrollTop</title>
+  <style>
+    .con {
+      padding: 0 50px 0 10px;
+      background-color: #f4f4f4;
+    }
+
+    .panel {
+      height: 500px;
+    }
+
+    .floors {
+      margin-right: 10px;
+    }
+
+    .floor {
+      height: 500px;
+    }
+    
+    /* 让最后一个大一个点，否则右侧菜单永远到不了 */
+    .floor:last-child {
+      height: 1000px;
+    }
+
+    .board {
+      width: 66px;
+      position: fixed;
+      right: 10px;
+      z-index: 999;
+      top: 44%;
+      line-height: 22px;
+    }
+
+    ul li {
+      padding: 10px;
+      text-align: center;
+    }
+    li.active{
+      background-color: coral;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <div class="panel">
+      我是一个大的轮播图
+    </div>
+
+    <div class="floors">
+      <div class="floor">
+        <h1>衣服</h1>
+        <div class="clothes">这里有很多衣服</div>
+      </div>
+      <div class="floor">
+        <h1>手机</h1>
+        <div class="mobile">这里有很多手机</div>
+      </div>
+      <div class="floor">
+        <h1>家用电器</h1>
+        <div class="appliances">这里有很多家用电器</div>
+      </div>
+      <div class="floor">
+        <h1>生鲜</h1>
+        <div class="seafood">这里有很多生鲜</div>
+      </div>
+      <div class="floor">
+        <h1>家具</h1>
+        <div class="furniture">这里有很多家具</div>
+      </div>
+    </div>
+    <div class="board">
+      <ul>
+        <li>衣服</li>
+        <li>手机</li>
+        <li>家用电器</li>
+        <li>生鲜</li>
+        <li>家具</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
